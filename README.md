@@ -68,6 +68,9 @@ library-management/
     ├── loans.html
     └── history.html
 ```
+#screenshots 
+
+<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/66002b76-c155-4aed-a446-232e4873fb97" />
 
 ## Notes for production
 
