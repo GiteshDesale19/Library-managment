@@ -1,74 +1,61 @@
-# Library-managment
-
 # LibraryHub — Library Management System
 
-A beginner-friendly Library Management System built with Python, Flask, SQLite, and Bootstrap.
+A beginner-friendly, full-stack Library Management System built with Python, Flask, and SQLite. It provides a librarian dashboard for managing books, members, book issues, returns, overdue books, and fines.
 
 ## Features
 
-- Librarian login system
+- Secure session-based librarian sign-in
 - Add, search, and remove books
 - Register and remove library members
-- Issue books to members
+- Issue available books and prevent duplicate active issues
 - Return books with automatic fine calculation
-- Track overdue loans
-- View returned-book history
-- SQLite database created automatically
+- Overdue-loan dashboard and full return history
+- SQLite database created automatically on first run
 
-## Technologies Used
+## Tech stack
 
-- Python
+- Python 3.10+
 - Flask
 - Flask-SQLAlchemy
 - SQLite
 - Bootstrap 5
-- HTML and CSS
 
-## How to Run the Project
-
-1. Clone the repository:
+## Run locally
 
 ```bash
-git clone https://github.com/GiteshDesale19/library-management.git
-```
-
-2. Open the project folder:
-
-```bash
+git clone https://github.com/YOUR-USERNAME/library-management.git
 cd library-management
+python -m venv .venv
 ```
 
-3. Install required packages:
+Activate the environment:
 
 ```bash
-python -m pip install -r requirements.txt
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+
+# macOS/Linux
+source .venv/bin/activate
 ```
 
-4. Start the application:
+Install and run:
 
 ```bash
+pip install -r requirements.txt
 python app.py
 ```
 
-5. Open this address in your browser:
+Open `http://127.0.0.1:5000` in a browser.
 
-```text
-http://127.0.0.1:5000
-```
+**Demo credentials:** username `admin`, password `admin123`.
 
-## Demo Login
-
-```text
-Username: admin
-Password: admin123
-```
-
-## Project Structure
+## Project structure
 
 ```text
 library-management/
 ├── app.py
 ├── requirements.txt
+├── .gitignore
 ├── README.md
 ├── static/
 │   └── style.css
@@ -82,21 +69,10 @@ library-management/
     └── history.html
 ```
 
-## Usage
+## Notes for production
 
-1. Log in with the demo credentials.
-2. Add books through the **Books** section.
-3. Add library members through the **Members** section.
-4. Issue an available book from the **Loans** section.
-5. Return books when they are received back.
-6. Check overdue books and fines from the dashboard and history pages.
+Before deploying, set a strong `SECRET_KEY` environment variable and replace the demonstration login with real user accounts and password hashing.
 
-## Future Improvements
+## Resume description
 
-- Real user accounts with password hashing
-- Book cover images
-- Email reminders for overdue books
-- Export reports as PDF or CSV
-- Role-based access for librarians and administrators
-
-Gitesh Desale
+Developed a Library Management System using Python, Flask, and SQLite to manage books, members, lending records, returns, overdue tracking, and automatic fine calculation. Built a responsive Bootstrap dashboard with CRUD operations, search, session-based authentication, and reporting history.

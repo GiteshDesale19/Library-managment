@@ -1,0 +1,8 @@
+body { background: #f6f8fb; color: #223; }
+.navbar { background: linear-gradient(90deg, #233a92, #3867d6) !important; }
+.card { border-radius: 12px; }
+.stat-card { background: linear-gradient(135deg, #fff, #edf3ff); border: 0; box-shadow: 0 .125rem .5rem rgba(0,0,0,.06); }
+.stat-card p { color: #667085; margin-bottom: .4rem; }
+.stat-card h2 { color: #233a92; margin: 0; font-weight: 700; }
+.login-wrap { margin-top: 12vh; }
+th { white-space: nowrap; }
